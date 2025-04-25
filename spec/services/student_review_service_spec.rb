@@ -95,7 +95,7 @@ RSpec.describe StudentReviewService do
       allow(participant).to receive(:get_reviewer).and_return(reviewer)
     end
     
-    it 'sorts review mappings correctly by id % 5' do
+   it 'sorts review mappings correctly by id % 5' do
       service = StudentReviewService.new(participant.id.to_s)
       
       # Expected order based on id % 5:
@@ -106,7 +106,7 @@ RSpec.describe StudentReviewService do
       # @map7 (7 % 5 = 2) should be fifth
       expected_ids = [5, 1, 6, 2, 7]
       actual_ids = service.review_mappings.map(&:id)
-      
+       
       expect(actual_ids).to eq(expected_ids)
     end
   end
