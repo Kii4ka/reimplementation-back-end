@@ -17,6 +17,10 @@ class StudentReviewService
     initialize_review_data
   end
 
+  def bidding_enabled?
+    assignment.bidding_for_reviews_enabled
+  end
+
   private
 
   def initialize_review_data
