@@ -2,7 +2,7 @@ name: CI/CD
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, Katerina_updated_tests ]
   pull_request:
     branches: [ main ]
 
